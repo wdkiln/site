@@ -5,27 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Gallery</title>
     <style>
-        body {
+        body{
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
-        .container {
+        .container{
             max-width: 1200px;
             margin: 20px auto;
             padding: 0 20px;
         }
-        .image-wrapper {
+        .image-wrapper{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             margin-top: 20px;
         }
-        .image-box {
+        .image-box{
             width: calc(50% - 10px);
             margin-bottom: 20px;
         }
-        .image-box img {
+        .image-box img{
             max-width: 100%;
             height: auto;
             display: block;
