@@ -1,6 +1,5 @@
 # site
 
-<!DOCTYPE html>
 <html>
 <body>
 
