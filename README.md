@@ -1,50 +1,42 @@
-
+<html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
+    <title>Census Data Visualization</title>
     <style>
-        body{
+        body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
-        .container{
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        .image-wrapper{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
             margin-top: 20px;
         }
-        .image-box{
-            width: calc(50% - 10px);
-            margin-bottom: 20px;
-        }
-        .image-box img{
-            max-width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 5px;
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Image Gallery</h1>
-        <div class="image-wrapper">
-            <div class="image-box">
-                <img src="image1.jpg" alt="Image 1">
-            </div>
-            <div class="image-box">
-                <img src="image2.jpg" alt="Image 2">
-            </div>
-            <!-- Add more image-box divs for additional images -->
-        </div>
+    <header>
+        <h1>Census Data Visualization</h1>
+    </header>
+
+    <div class="iframe-container">
+        <iframe src="https://data.census.gov/vizwidget?g=060XX00US5603991815&infoSection=Residential%20Mobility" width="100%" height="100%" frameborder="0"></iframe>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Census Data Visualization. All rights reserved.</p>
+    </footer>
 </body>
 </html>
