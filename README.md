@@ -5,72 +5,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
+    <title>Image Gallery</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
         }
-        nav {
-            background-color: #f4f4f4;
-            padding: 10px 20px;
+        .image-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
         }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
+        .image-box {
+            width: calc(50% - 10px);
+            margin-bottom: 20px;
         }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-        nav ul li a:hover {
-            color: #555;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>About Us</h2>
-        <p>This is a simple website to demonstrate HTML layout.</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 My Simple Website. All rights reserved.</p>
-    </footer>
+    <div class="container">
+        <h1>Image Gallery</h1>
+        <div class="image-wrapper">
+            <div class="image-box">
+                <img src="image1.jpg" alt="Image 1">
+            </div>
+            <div class="image-box">
+                <img src="image2.jpg" alt="Image 2">
+            </div>
+            <!-- Add more image-box divs for additional images -->
+        </div>
+    </div>
 </body>
 </html>
